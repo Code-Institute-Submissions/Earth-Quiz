@@ -1,44 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Earth Quiz</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-</head>
-<body>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="mt-5 text-center decoration">Planet Earth</h1>
+      <h3 class="mt-5 text-center decoration">
+        Let's see how much do you know about your home!
+      </h3>
+    </header>
+    <!--LANDING PAGE-->
     <div class="container decoration text-center">
-    <h1 class="mt-5">Planet Earth</h1>
-    <h3 class="mt-5">Let's see how much do you know about your home!</h3>
-    <h4 class="mt-5">Few facts about Earth</h4>
-    <ul>
+      <h4 class="mt-5">Few facts about Earth</h4>
+      <ul>
         <li class="mt-5">
-            The Earth is the densest planet in the Solar System.
-            This varies according to the part of the planet; for example, the metallic core is denser than the crust. 
-            The average density of the Earth is approximately 5.52 grams per cubic centimetre.
+          The Earth is the densest planet in the Solar System. This varies
+          according to the part of the planet; for example, the metallic core is
+          denser than the crust. The average density of the Earth is
+          approximately 5.52 grams per cubic centimetre.
         </li>
-        <li class="mt-5">Only 3% water of the earth is fresh, rest 97% salted. Of that 3%, over 2% is frozen in ice sheets and glaciers. 
-            Means less than 1% fresh water is found in lakes, rivers and underground.
+        <li class="mt-5">
+          Only 3% water of the earth is fresh, rest 97% salted. Of that 3%, over
+          2% is frozen in ice sheets and glaciers. Means less than 1% fresh
+          water is found in lakes, rivers and underground.
         </li>
         <li>
-            Earth is the only planet not named after a god.
-            The other seven planets in our solar system are all named after Roman gods or goddesses. 
-            Although only Mercury, Venus, Mars, Jupiter and Saturn were named during ancient times, because they were visible to the naked eye, 
-            the Roman method of naming planets was retained after the discovery of Uranus and Neptune.
+          Earth is the only planet not named after a god. The other seven
+          planets in our solar system are all named after Roman gods or
+          goddesses. Although only Mercury, Venus, Mars, Jupiter and Saturn were
+          named during ancient times, because they were visible to the naked
+          eye, the Roman method of naming planets was retained after the
+          discovery of Uranus and Neptune.
         </li>
         <li class="mt-5">
-            A year on Earth isn’t 365 days
-            It’s actually 365.2564 days. It’s this extra .2564 days that creates the need for leap years. 
-            That’s why we tack on an extra day in February every year divisible by 4 – 2004, 2008, etc – unless it’s divisible by 100 (1900, 2100, etc)… 
-            unless it’s divisible by 400 (1600, 2000, etc).
+          A year on Earth isn’t 365 days It’s actually 365.2564 days. It’s this
+          extra .2564 days that creates the need for leap years. That’s why we
+          tack on an extra day in February every year divisible by 4 – 2004,
+          2008, etc – unless it’s divisible by 100 (1900, 2100, etc)… unless
+          it’s divisible by 400 (1600, 2000, etc).
         </li>
-    </ul>
+      </ul>
 
-    <h3 class="mt-5">Test your knowledge by taking this short quiz.</h3>
-    <button type="button" class="btn btn-warning btn-lg mt-5">Start Quiz!</button>
+      <h3 class="mt-5">Test your knowledge by taking this short quiz.</h3>
+      <button type="button" class="btn btn-warning btn-lg mt-5">
+        Start Quiz!
+      </button>
     </div>
-</body>
+    <!--/LANDING PAGE-->
+
+    <!--QUIZ QUESTIONS-->
+
+    <!--QUESTION 1-->
+    <div class="quiz-questions" id="quiz-questions">
+    <div class="container">
+    <div class="question" id="question-1">
+      <div class="card">
+        <img src="" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title text-center">What is the name of the largest ocean on earth?</h5>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 1</button>
+          <button class="btn btn-primary">Answer 2</button>
+          </div>
+          </div>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 3</button>
+          <button class="btn btn-primary">Answer 4</button>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--/QUESTION 1-->
+      <!--QUESTION 2-->
+      <div class="container">
+    <div class="question" id="question-2">
+      <div class="card">
+        <img src="" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title text-center">What is the name of the largest ocean on earth?</h5>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 1</button>
+          <button class="btn btn-primary">Answer 2</button>
+          </div>
+          </div>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 3</button>
+          <button class="btn btn-primary">Answer 4</button>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--/QUESTION 2-->
+      <!--QUESTION 3-->
+      <div class="container">
+    <div class="question" id="question-3">
+      <div class="card">
+        <img src="" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title text-center">What is the name of the largest ocean on earth?</h5>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 1</button>
+          <button class="btn btn-primary">Answer 2</button>
+          </div>
+          </div>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 3</button>
+          <button class="btn btn-primary">Answer 4</button>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--/QUESTION 3-->
+      <!--QUESTION 4-->
+      <div class="container">
+    <div class="question" id="question-4">
+      <div class="card">
+        <img src="" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title text-center">What is the name of the largest ocean on earth?</h5>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 1</button>
+          <button class="btn btn-primary">Answer 2</button>
+          </div>
+          </div>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 3</button>
+          <button class="btn btn-primary">Answer 4</button>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--/QUESTION 4-->
+      <!--QUESTION 5-->
+      <div class="container">
+    <div class="question" id="question-5">
+      <div class="card">
+        <img src="" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title text-center">What is the name of the largest ocean on earth?</h5>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 1</button>
+          <button class="btn btn-primary">Answer 2</button>
+          </div>
+          </div>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 3</button>
+          <button class="btn btn-primary">Answer 4</button>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--/QUESTION 5-->
+      <!--QUESTION 6-->
+      <div class="container">
+    <div class="question" id="question-6">
+      <div class="card">
+        <img src="" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title text-center">What is the name of the largest ocean on earth?</h5>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 1</button>
+          <button class="btn btn-primary">Answer 2</button>
+          </div>
+          </div>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 3</button>
+          <button class="btn btn-primary">Answer 4</button>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--/QUESTION 6-->
+      <!--QUESTION 7-->  
+      <div class="container">
+    <div class="question" id="question-7">
+      <div class="card">
+        <img src="" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title text-center">What is the name of the largest ocean on earth?</h5>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 1</button>
+          <button class="btn btn-primary">Answer 2</button>
+          </div>
+          </div>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 3</button>
+          <button class="btn btn-primary">Answer 4</button>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--/QUESTION 7-->
+      <!--QUESTION 8-->
+      <div class="container">
+    <div class="question" id="question-8">
+      <div class="card">
+        <img src="" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title text-center">What is the name of the largest ocean on earth?</h5>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 1</button>
+          <button class="btn btn-primary">Answer 2</button>
+          </div>
+          </div>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 3</button>
+          <button class="btn btn-primary">Answer 4</button>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--/QUESTION 8-->
+      <!--QUESTION 9-->
+      <div class="container">
+    <div class="question" id="question-9">
+      <div class="card">
+        <img src="" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title text-center">What is the name of the largest ocean on earth?</h5>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 1</button>
+          <button class="btn btn-primary">Answer 2</button>
+          </div>
+          </div>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 3</button>
+          <button class="btn btn-primary">Answer 4</button>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--/QUESTION 9-->
+      <!--QUESTION 10-->
+      <div class="container">
+    <div class="question" id="question-10">
+      <div class="card">
+        <img src="" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title text-center">What is the name of the largest ocean on earth?</h5>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 1</button>
+          <button class="btn btn-primary">Answer 2</button>
+          </div>
+          </div>
+          <div class="row justify-content-around">
+          <div class="col-12 text-center">
+          <button class="btn btn-primary">Answer 3</button>
+          <button class="btn btn-primary">Answer 4</button>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--/QUESTION 10-->
+    </div>
+  </body>
 </html>
