@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,400;1,700&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     border: 0;
+}
+ html {
+     font-family: 'Balsamiq Sans', sans-serif;
+ }
+ body {
+     background-image: linear-gradient(rgba(102, 101, 101, 0.7), rgba(102, 101, 101, 0.7)),url(../images/planet-earth.jpg);
+     background-size: cover;
+     background-position: center;
+     height: auto;
+     background-attachment: fixed;
+ }
+/***USED OFTEN***/
+h1, h2, h3 {
+    color: #fffde7;
+}
+.decoration {
+    color: #fffde7;
+    font-family: "Balsamiq Sans";
+    letter-spacing: 4px;
+}
+ ul {
+     list-style-type: none;
+ }
