@@ -15,6 +15,10 @@
      height: auto;
      background-attachment: fixed;
  }
+ ul {
+     list-style-type: none;
+ }
+
 /***USED OFTEN***/
 h1, h2, h3 {
     color: #fffde7;
@@ -24,6 +28,12 @@ h1, h2, h3 {
     font-family: "Balsamiq Sans";
     letter-spacing: 4px;
 }
- ul {
-     list-style-type: none;
- }
+ 
+/***BUTTONS***/
+.card-body .btn {
+    margin: 10px 150px;
+    padding: 10px 40px;
+}
+.card-body .answer-btn {
+    padding: 10px 70px;
+}
