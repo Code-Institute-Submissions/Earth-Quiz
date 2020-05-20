@@ -5,7 +5,7 @@
      padding: 0;
      border: 0;
 }
- html {
+ body {
      font-family: 'Balsamiq Sans', sans-serif;
  }
  body {
@@ -37,5 +37,10 @@ h1, h2, h3 {
     background-color:#90caf9;
     font-size: 1.25rem;
     line-height: 1.5;
-    font-weight: 400;
+}
+
+/***QUIZ IMAGES***/
+.question .card img {
+    height: 100%;
+    width: 100%;
 }
