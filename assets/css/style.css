@@ -30,10 +30,12 @@ h1, h2, h3 {
 }
  
 /***BUTTONS***/
-.card-body .btn {
-    margin: 10px 150px;
-    padding: 10px 40px;
-}
-.card-body .answer-btn {
-    padding: 10px 70px;
+.answer-btn {
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color:#90caf9;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 400;
 }
