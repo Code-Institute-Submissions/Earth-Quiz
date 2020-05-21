@@ -39,6 +39,9 @@ h1, h2, h3 {
     line-height: 1.5;
     display: inline-block;
 }
+.answer-btn:hover {
+    background-color: orange;
+}
 
 /***QUIZ IMAGES***/
 .question .card img {
