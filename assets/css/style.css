@@ -31,12 +31,13 @@ h1, h2, h3 {
  
 /***BUTTONS***/
 .answer-btn {
-    width: 40%;
+    width: 60%;
     padding: 20px;
     border-radius: 20px;
     background-color:#90caf9;
     font-size: 1.25rem;
     line-height: 1.5;
+    display: inline-block;
 }
 
 /***QUIZ IMAGES***/
