@@ -41,7 +41,12 @@ h1, h2, h3 {
 }
 .answer-btn:hover {
     background-color: orange;
+    cursor: pointer;
 }
+
+.answer-btn:focus {
+    outline: 0;
+} 
 
 /***QUIZ IMAGES***/
 .question .card img {
