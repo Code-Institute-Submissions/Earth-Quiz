@@ -69,18 +69,27 @@ let questions = [
     question: 'Outside of Antarctica, what is the largest desert in the world?',
     answers: [
       { text: 'Arabian Desert', correct: false },
-      { text: 'Sahara Desert', correct: false },
-      { text: 'Gobi Desert', correct: true },
+      { text: 'Sahara Desert', correct: true },
+      { text: 'Gobi Desert', correct: false },
       { text: 'Kalahari Desert', correct: false }
     ]
   },
   {
-    question: 'What is the name of the deepest location in the world’s oceans?',
+    question: 'The gemstone ruby is typically what color?',
     answers: [
-      { text: 'Tonga Trench', correct: false },
-      { text: 'Philippine Trench', correct: false },
-      { text: 'Mariana Trench', correct: true },
-      { text: 'Japan Trench', correct: false }
+      { text: 'White', correct: false },
+      { text: 'Yellow', correct: false },
+      { text: 'Blue', correct: false },
+      { text: 'Red', correct: true }
+    ]
+  },
+  {
+    question: 'What is the name of the highest mountain on earth?',
+    answers: [
+      { text: 'Mount Everest', correct: true },
+      { text: 'K2', correct: false },
+      { text: 'Makalu', correct: false },
+      { text: 'Cho Oyu', correct: false }
     ]
   },
   {
@@ -93,30 +102,21 @@ let questions = [
     ]
   },
   {
-    question: 'What is the name of the deepest location in the world’s oceans?',
+    question: 'What is the second most common gas found in the air we breathe?',
     answers: [
-      { text: 'Tonga Trench', correct: false },
-      { text: 'Philippine Trench', correct: false },
-      { text: 'Mariana Trench', correct: true },
-      { text: 'Japan Trench', correct: false }
+      { text: 'Helium', correct: false },
+      { text: 'Oxygen', correct: true },
+      { text: 'Sulfur', correct: false },
+      { text: 'Krypton', correct: false }
     ]
   },
   {
-    question: 'What is the name of the deepest location in the world’s oceans?',
+    question: 'What is longest river in the world?',
     answers: [
-      { text: 'Tonga Trench', correct: false },
-      { text: 'Philippine Trench', correct: false },
-      { text: 'Mariana Trench', correct: true },
-      { text: 'Japan Trench', correct: false }
-    ]
-  },
-  {
-    question: 'What is the name of the deepest location in the world’s oceans?',
-    answers: [
-      { text: 'Tonga Trench', correct: false },
-      { text: 'Philippine Trench', correct: false },
-      { text: 'Mariana Trench', correct: true },
-      { text: 'Japan Trench', correct: false }
+      { text: 'Nile', correct: false },
+      { text: 'Amazon River', correct: true },
+      { text: 'Congo River', correct: false },
+      { text: 'Niger', correct: false }
     ]
   }
 ]
