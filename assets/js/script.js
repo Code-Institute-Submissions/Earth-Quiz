@@ -1,32 +1,7 @@
-
-
-let startButton = document.getElementById("start-button")
-let questionContainer = document.getElementById("quiz-questions")
-
-
 //hide question section when the page is loaded
 $(document).ready(function(){
     $(".question").hide();
 })
-//on click Start Quiz button hide landing page and show question in quiz
-$("#start-button").click(function(){
-        $("#landing-page").hide("slow");
-        $(".question").show("slow");
-    })
-
-
-function startGame(){
-    nextQuestion()
-}
-
-function nextQuestion() {
-
-}
-
-function selectAnswer() {
-
-}
-     
 
 let questions = [
   {
@@ -113,10 +88,53 @@ let questions = [
   {
     question: 'What is longest river in the world?',
     answers: [
-      { text: 'Nile', correct: false },
-      { text: 'Amazon River', correct: true },
+      { text: 'Nile', correct: true },
+      { text: 'Amazon River', correct: false },
       { text: 'Congo River', correct: false },
       { text: 'Niger', correct: false }
     ]
   }
 ]
+
+let startButton = document.getElementById("start-button")
+let questionContainer = document.getElementById("quiz-questions")
+let questionElement = document.getElementById("question-info")
+let answersButtons = document.getElementById("answer-btns")
+let shuffledQuestions, currentQuestion
+startGame();
+
+
+function startGame(){
+    //on click Start Quiz button hide landing page and show question in quiz
+    $("#start-button").click(function(){
+        $("#landing-page").hide("slow");
+        $(".question").show("slow");
+    })
+    shuffledQuestions = questions.sort(() => Math.random() - .5)
+    currentQuestion = 0
+    nextQuestion();
+}
+
+function nextQuestion() {
+   showQuestion(shuffledQuestions[currentQuestion]);
+}
+
+function showQuestion(question) {
+    questionElement.innerText = question.question
+    question.answers.forEach(answer => {
+        const button = document.createElement("button")
+        button.innerText = answer.text
+        button.classList.add("answer-btn")
+        if(answer.correct){
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener("click", selectAnswer)
+        answersButtons.appendChild(button)
+    });
+}
+
+function selectAnswer() {
+
+}
+     
+
