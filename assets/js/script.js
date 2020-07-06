@@ -100,9 +100,9 @@ let startButton = document.getElementById("start-button")
 let questionContainer = document.getElementById("quiz-questions")
 let questionElement = document.getElementById("question-info")
 let answersButtons = document.getElementById("answer-btns")
+let nextButton = document.getElementById("next-button")
 let shuffledQuestions, currentQuestion
 startGame();
-
 
 function startGame(){
     //on click Start Quiz button hide landing page and show question in quiz
@@ -110,13 +110,18 @@ function startGame(){
         $("#landing-page").hide("slow");
         $(".question").show("slow");
     })
+    // shuffling questions so the order is not always the same
     shuffledQuestions = questions.sort(() => Math.random() - .5)
+    //current question index
     currentQuestion = 0
     nextQuestion();
+    
+   showQuestion();
 }
 
 function nextQuestion() {
-   showQuestion(shuffledQuestions[currentQuestion]);
+    resetState()
+    showQuestion(shuffledQuestions[currentQuestion]);
 }
 
 function showQuestion(question) {
@@ -124,7 +129,7 @@ function showQuestion(question) {
     question.answers.forEach(answer => {
         const button = document.createElement("button")
         button.innerText = answer.text
-        button.classList.add("answer-btn")
+        button.classList.add("answer-btn", "col-sm-12", "col-lg-6", "text-center", "mt-3")
         if(answer.correct){
             button.dataset.correct = answer.correct
         }
@@ -133,8 +138,23 @@ function showQuestion(question) {
     });
 }
 
-function selectAnswer() {
+function resetState() {
+    while (answersButtons.firstChild){
+        answersButtons.removeChild(answersButtons.firstChild)
+    }
+}
 
+function selectAnswer(e) {
+    let selectedButton = e.target
+    let correct = selectedButton.dataset.correct
+    Array.from(answersButtons.children).forEach(button)
 }
      
 
+/*
+function showQuestion(){
+    for(let i=0; i < questions.length; i++){
+        questionElement.innerText = questions[i].question;
+        answersButtons.innerText = questions[i].answers;
+    }
+}*/
