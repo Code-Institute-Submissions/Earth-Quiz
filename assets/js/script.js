@@ -6,6 +6,7 @@ $(document).ready(function(){
 let questions = [
   {
     question: 'What is the name of the largest ocean on earth?',
+    img: "assets/images/ocean.jpg",
     answers: [
       { text: 'The Pacific Ocean', correct: true },
       { text: 'The Indian Ocean', correct: false },
@@ -15,6 +16,7 @@ let questions = [
   },
   {
     question: 'What are the two main metals in the earth’s core?',
+    img: "assets/images/metals.jpg",
     answers: [
       { text: 'Silver and Gold', correct: false },
       { text: 'Iron and Nickel', correct: true },
@@ -24,6 +26,7 @@ let questions = [
   },
   {
     question: 'Which of the following is NOT considered a continent?',
+    img: "assets/images/continents.jpg",
     answers: [
       { text: 'Antarctica', correct: false },
       { text: 'Australia', correct: false },
@@ -33,6 +36,7 @@ let questions = [
   },
   {
     question: 'What is the name of the deepest location in the world’s oceans?',
+    img: "assets/images/Mariana_Trench.jpg",
     answers: [
       { text: 'Tonga Trench', correct: false },
       { text: 'Philippine Trench', correct: false },
@@ -42,6 +46,7 @@ let questions = [
   },
   {
     question: 'Outside of Antarctica, what is the largest desert in the world?',
+    img: "assets/images/desert.jpg",
     answers: [
       { text: 'Arabian Desert', correct: false },
       { text: 'Sahara Desert', correct: true },
@@ -51,6 +56,7 @@ let questions = [
   },
   {
     question: 'The gemstone ruby is typically what color?',
+    img: "assets/images/gemstone.jpg",
     answers: [
       { text: 'White', correct: false },
       { text: 'Yellow', correct: false },
@@ -60,6 +66,7 @@ let questions = [
   },
   {
     question: 'What is the name of the highest mountain on earth?',
+    img: "assets/images/mountain.jpg",
     answers: [
       { text: 'Mount Everest', correct: true },
       { text: 'K2', correct: false },
@@ -69,6 +76,7 @@ let questions = [
   },
   {
     question: 'What is the name of the deepest location in the world’s oceans?',
+    img: "assets/images/Mariana_Trench.jpg",
     answers: [
       { text: 'Tonga Trench', correct: false },
       { text: 'Philippine Trench', correct: false },
@@ -78,6 +86,7 @@ let questions = [
   },
   {
     question: 'What is the second most common gas found in the air we breathe?',
+    img: "assets/images/oxygen.jpg",
     answers: [
       { text: 'Helium', correct: false },
       { text: 'Oxygen', correct: true },
@@ -87,6 +96,7 @@ let questions = [
   },
   {
     question: 'What is longest river in the world?',
+    img: "assets/images/river.jpg",
     answers: [
       { text: 'Nile', correct: true },
       { text: 'Amazon River', correct: false },
@@ -96,12 +106,14 @@ let questions = [
   }
 ]
 
-let startButton = document.getElementById("start-button")
-let questionContainer = document.getElementById("quiz-questions")
-let questionElement = document.getElementById("question-info")
-let answersButtons = document.getElementById("answer-btns")
-let nextButton = document.getElementById("next-button")
-let shuffledQuestions, currentQuestion
+let startButton = document.getElementById("start-button");
+let questionContainer = document.getElementById("quiz-questions");
+let questionElement = document.getElementById("question-info");
+let answersButtons = document.getElementById("answer-btns");
+let nextButton = document.getElementById("next-button");
+let shuffledQuestions, currentQuestion;
+let imageElement = document.getElementById("image");
+let score = 0;
 startGame();
 
 function startGame(){
@@ -115,46 +127,43 @@ function startGame(){
     //current question index
     currentQuestion = 0
     nextQuestion();
-    
-   showQuestion();
 }
 
 function nextQuestion() {
-    resetState()
+    //resetState()
     showQuestion(shuffledQuestions[currentQuestion]);
 }
 
 function showQuestion(question) {
     questionElement.innerText = question.question
-    question.answers.forEach(answer => {
-        const button = document.createElement("button")
+    imageElement.src = question.img
+    question.answers.forEach((answer, index) => {
+        const button = document.getElementById("answer-btn-" + (index + 1));
+        console.log(answer, index, button);
         button.innerText = answer.text
-        button.classList.add("answer-btn", "col-sm-12", "col-lg-6", "text-center", "mt-3")
+        //button.classList.add("answer-btn")
         if(answer.correct){
             button.dataset.correct = answer.correct
         }
-        button.addEventListener("click", selectAnswer)
-        answersButtons.appendChild(button)
+        button.addEventListener("click", function(e) {
+          let selectedButton = e.target
+          let correct = selectedButton.dataset.correct;
+          if(correct) {
+            button.classList.add("green");
+            score++;
+          }else {
+              button.classList.add("red");
+          }
+        })
+        
     });
 }
 
-function resetState() {
+    function resetState() {
     while (answersButtons.firstChild){
         answersButtons.removeChild(answersButtons.firstChild)
     }
 }
 
-function selectAnswer(e) {
-    let selectedButton = e.target
-    let correct = selectedButton.dataset.correct
-    Array.from(answersButtons.children).forEach(button)
-}
-     
 
-/*
-function showQuestion(){
-    for(let i=0; i < questions.length; i++){
-        questionElement.innerText = questions[i].question;
-        answersButtons.innerText = questions[i].answers;
-    }
-}*/
+      
