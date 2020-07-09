@@ -51,6 +51,13 @@ h1, h2, h3 {
     outline: 0;
 } 
 
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
 /***QUIZ IMAGES***/
 .question .card img {
     height: 100%;
