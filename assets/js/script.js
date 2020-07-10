@@ -143,7 +143,6 @@ function showQuestion(question) {
   imageElement.src = question.img;
   question.answers.forEach((answer, index) => {
     const button = document.getElementById("answer-btn-" + (index + 1));
-    console.log(answer, index, button);
     button.innerText = answer.text;
     if (answer.correct) {
       button.dataset.correct = answer.correct;
