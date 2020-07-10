@@ -130,7 +130,10 @@ function startGame() {
   currentQuestion = 0;
   nextQuestion();
 }
-
+nextButton.addEventListener("click", ()=>{
+    currentQuestion++;
+    nextQuestion();
+})
 function nextQuestion() {
   showQuestion(shuffledQuestions[currentQuestion]);
 }
@@ -142,7 +145,6 @@ function showQuestion(question) {
     const button = document.getElementById("answer-btn-" + (index + 1));
     console.log(answer, index, button);
     button.innerText = answer.text;
-    //button.classList.add("answer-btn")
     if (answer.correct) {
       button.dataset.correct = answer.correct;
     }
@@ -153,10 +155,13 @@ function showQuestion(question) {
         button.classList.add("green");
         score++;
         $("#correct-feedback").show("slow");
+        $("#incorrect-feedback").hide();
       } else {
         button.classList.add("red");
         $("#incorrect-feedback").show("slow");
+        $("#correct-feedback").hide();
       }
     });
   });
 }
+
