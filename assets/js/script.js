@@ -125,6 +125,8 @@ let no = document.getElementById("no");
 let score = 0;
 startGame();
 
+quitButton.addEventListener("click", quitGame)
+
 function startGame() {
   //on click Start Quiz button hide landing page and show question in quiz
   $("#start-button").click(function () {
@@ -154,6 +156,9 @@ function showQuestion(question) {
 function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
+  if (selectedButton.dataset.correct === "true"){
+      score++;
+  }
   setStatusClass(selectedButton, correct);
   Array.from(answersButtonsClass).forEach(button => {
     setStatusClass(button, button.dataset.correct);
@@ -173,7 +178,6 @@ function setStatusClass(element, correct) {
     element.classList.add('green');
     $("#correct-feedback").show();
     $("#incorrect-feedback").hide();
-    score++;
   } else {
     element.classList.add('red');
     $("#incorrect-feedback").show();
