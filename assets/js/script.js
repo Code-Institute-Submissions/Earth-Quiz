@@ -4,7 +4,7 @@ $(document).ready(function () {
   $("#correct-feedback").hide();
   $("#incorrect-feedback").hide();
 });
-
+//quiz questions
 let questions = [
   {
     question: "What is the name of the largest ocean on earth?",
@@ -107,14 +107,21 @@ let questions = [
     ],
   },
 ];
-
+let landingPage = document.getElementById("landing-page");
 let startButton = document.getElementById("start-button");
 let questionContainer = document.getElementById("quiz-questions");
 let questionElement = document.getElementById("question-info");
 let answersButtons = document.getElementById("answer-btns");
+let answersButtonsClass = document.getElementsByClassName("answer-btn");
 let nextButton = document.getElementById("next-button");
 let shuffledQuestions, currentQuestion;
 let imageElement = document.getElementById("image");
+let scoreElement = document.getElementById("score");
+let scoreContainer = document.getElementById("score-page");
+let tryAgain = document.getElementById("try-again-btn");
+let quitButton = document.getElementById("quit-button");
+let yes = document.getElementById("yes");
+let no = document.getElementById("no");
 let score = 0;
 startGame();
 
@@ -129,14 +136,7 @@ function startGame() {
   //current question index
   currentQuestion = 0;
   nextQuestion();
-}
-nextButton.addEventListener("click", ()=>{
-    currentQuestion++;
-    nextQuestion();
-})
-function nextQuestion() {
-  showQuestion(shuffledQuestions[currentQuestion]);
-}
+};
 
 function showQuestion(question) {
   questionElement.innerText = question.question;
@@ -147,20 +147,61 @@ function showQuestion(question) {
     if (answer.correct) {
       button.dataset.correct = answer.correct;
     }
-    button.addEventListener("click", function (e) {
-      let selectedButton = e.target;
-      let correct = selectedButton.dataset.correct;
-      if (correct) {
-        button.classList.add("green");
-        score++;
-        $("#correct-feedback").show("slow");
-        $("#incorrect-feedback").hide();
-      } else {
-        button.classList.add("red");
-        $("#incorrect-feedback").show("slow");
-        $("#correct-feedback").hide();
-      }
-    });
+    button.addEventListener("click", selectAnswer)
   });
+};
+
+function selectAnswer(e) {
+  const selectedButton = e.target;
+  const correct = selectedButton.dataset.correct;
+  setStatusClass(selectedButton, correct);
+  Array.from(answersButtonsClass).forEach(button => {
+    setStatusClass(button, button.dataset.correct);
+  })
+  if (shuffledQuestions.length > currentQuestion + 1) {
+     nextButton.classList.remove("d-none");
+  } else {
+    scoreContainer.classList.remove("d-none");
+    questionContainer.classList.add("d-none");
+    scoreElement.innerText = "Your score is: " + score + "/" + questions.length;
+  }
 }
 
+function setStatusClass(element, correct) {
+  clearStatusClass(element)
+  if (correct) {
+    element.classList.add('green');
+    $("#correct-feedback").show();
+    $("#incorrect-feedback").hide();
+    score++;
+  } else {
+    element.classList.add('red');
+    $("#incorrect-feedback").show();
+    $("#correct-feedback").hide();
+  }
+  nextButton.classList.remove("d-none");
+}
+
+function clearStatusClass(element) {
+  element.classList.remove("green");
+  element.classList.remove("red");
+}
+
+nextButton.addEventListener("click", () => {
+  currentQuestion++;
+  nextQuestion();
+})
+
+function nextQuestion() {
+  resetState();
+  showQuestion(shuffledQuestions[currentQuestion]);
+};
+
+function resetState(){
+    clearStatusClass(questionContainer);
+    nextButton.classList.add("d-none");
+};
+
+function quitGame(){
+    
+}
