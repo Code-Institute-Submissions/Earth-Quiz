@@ -171,6 +171,7 @@ function selectAnswer(e) {
   } else {
     scoreContainer.classList.remove("d-none");
     questionContainer.classList.add("d-none");
+    $("h3").hide();
     scoreElement.innerText = "Your score is: " + score + "/" + questions.length;
   }
 }
@@ -212,5 +213,9 @@ function quitGame(){
 }
 
 tryAgain.addEventListener('click', () => {
-  console.log('Reset quiz');
+    scoreContainer.classList.add("d-none");
+    questionContainer.classList.remove("d-none");
+    score = 0;
+    nextQuestion();
+    resetButtonState();
 })
