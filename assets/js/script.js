@@ -158,11 +158,11 @@ function selectAnswer(e) {
   const correct = selectedButton.dataset.correct;
   if (selectedButton.dataset.correct === "true"){
       score++;
+      //setStatusClass(selectedButton);
   }
+  disableClick();
   setStatusClass(selectedButton, correct);
-  Array.from(answersButtonsClass).forEach(button => {
-    setStatusClass(button, button.dataset.correct);
-  })
+
   if (shuffledQuestions.length > currentQuestion + 1) {
      nextButton.classList.remove("d-none");
   } else {
@@ -175,15 +175,10 @@ function selectAnswer(e) {
 function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
-    element.classList.add('green');
-    $("#correct-feedback").show();
-    $("#incorrect-feedback").hide();
+    element.classList.add("green");
   } else {
-    element.classList.add('red');
-    $("#incorrect-feedback").show();
-    $("#correct-feedback").hide();
+    element.classList.add("red");
   }
-  nextButton.classList.remove("d-none");
 }
 
 function clearStatusClass(element) {
@@ -197,14 +192,14 @@ nextButton.addEventListener("click", () => {
 })
 
 function nextQuestion() {
-  resetState();
+  nextButton.classList.add("d-none");
   showQuestion(shuffledQuestions[currentQuestion]);
+   $(".answer-btn").prop("disabled", false);
 };
 
-function resetState(){
-    clearStatusClass(questionContainer);
-    nextButton.classList.add("d-none");
-};
+function disableClick(){
+    $(".answer-btn").prop("disabled", true);
+}
 
 function quitGame(){
     
