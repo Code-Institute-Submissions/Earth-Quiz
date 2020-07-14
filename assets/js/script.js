@@ -123,9 +123,9 @@ let quitButton = document.getElementById("quit-button");
 let yes = document.getElementById("yes");
 let no = document.getElementById("no");
 let score = 0;
+let answerButtonsArray;
 startGame();
 
-quitButton.addEventListener("click", quitGame)
 
 function startGame() {
   //on click Start Quiz button hide landing page and show question in quiz
@@ -146,6 +146,7 @@ function showQuestion(question) {
   question.answers.forEach((answer, index) => {
     const button = document.getElementById("answer-btn-" + (index + 1));
     button.innerText = answer.text;
+    button.removeAttribute('data-correct');
     if (answer.correct) {
       button.dataset.correct = answer.correct;
     }
@@ -154,15 +155,17 @@ function showQuestion(question) {
 };
 
 function selectAnswer(e) {
+  answerButtonsArray = [];  
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
   if (selectedButton.dataset.correct === "true"){
       score++;
-      //setStatusClass(selectedButton);
   }
-  disableClick();
-  setStatusClass(selectedButton, correct);
-
+   $(".answer-btn").prop("disabled", true);
+  Array.from(answersButtonsClass).forEach(button => {
+    setStatusClass(button, button.dataset.correct);
+    answerButtonsArray.push(button);
+  })
   if (shuffledQuestions.length > currentQuestion + 1) {
      nextButton.classList.remove("d-none");
   } else {
@@ -188,8 +191,15 @@ function clearStatusClass(element) {
 
 nextButton.addEventListener("click", () => {
   currentQuestion++;
+  resetButtonState();
   nextQuestion();
 })
+
+function resetButtonState(){
+  answerButtonsArray.forEach( element => {
+    clearStatusClass(element);
+  });
+}
 
 function nextQuestion() {
   nextButton.classList.add("d-none");
@@ -197,10 +207,10 @@ function nextQuestion() {
    $(".answer-btn").prop("disabled", false);
 };
 
-function disableClick(){
-    $(".answer-btn").prop("disabled", true);
-}
-
 function quitGame(){
     
 }
+
+tryAgain.addEventListener('click', () => {
+  console.log('Reset quiz');
+})
