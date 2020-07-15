@@ -137,7 +137,7 @@ function startGame() {
   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
   //current question index
   currentQuestion = 0;
-  nextQuestion();
+  nextQuestion(); 
 };
 
 function showQuestion(question) {
