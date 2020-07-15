@@ -1,10 +1,10 @@
-//hide question section when the page is loaded
+/*HIDE QUESTION SECTION WHEN THE PAGE IS LOADED*/
 $(document).ready(function () {
   $(".question").hide();
   $("#correct-feedback").hide();
   $("#incorrect-feedback").hide();
 });
-//quiz questions
+/*QUIZ QUESTIONS*/
 let questions = [
   {
     question: "What is the name of the largest ocean on earth?",
@@ -119,28 +119,26 @@ let imageElement = document.getElementById("image");
 let scoreElement = document.getElementById("score");
 let scoreContainer = document.getElementById("score-page");
 let tryAgain = document.getElementById("try-again-btn");
-let quitButton = document.getElementById("quit-button");
-let yes = document.getElementById("yes");
-let no = document.getElementById("no");
 let score = 0;
 let answerButtonsArray;
 startGame();
 
 
 function startGame() {
-  //on click Start Quiz button hide landing page and show question in quiz
+  /*ON CLICK Start Quiz BUTTON HIDE LANDING PAGE AND SHOW QUESTION IN QUIZ*/
   $("#start-button").click(function () {
     $("#landing-page").hide("slow");
     $(".question").show("slow");
   });
-  // shuffling questions so the order is not always the same
+  /*SHUFFLING QUESTIONS SO THE ORDER IS NOT ALWAYS SAME*/
   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-  //current question index
+  /*CURRENT QUESTION INDEX*/
   currentQuestion = 0;
   nextQuestion(); 
 };
 
 function showQuestion(question) {
+  /*POPULATING QUESTION CONTAINER WITH QUESTION, IMAGE AND ANSWERS*/  
   questionElement.innerText = question.question;
   imageElement.src = question.img;
   question.answers.forEach((answer, index) => {
@@ -155,12 +153,14 @@ function showQuestion(question) {
 };
 
 function selectAnswer(e) {
+  /*CREATING AN EMPTY ARRAY FOR RESETING STATE OF THE BUTTONS*/  
   answerButtonsArray = [];  
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
   if (selectedButton.dataset.correct === "true"){
       score++;
   }
+   /*DISABLING ANSWER BUTTONS AFTER CLICK*/
    $(".answer-btn").prop("disabled", true);
   Array.from(answersButtonsClass).forEach(button => {
     setStatusClass(button, button.dataset.correct);
@@ -176,7 +176,7 @@ function selectAnswer(e) {
     quizEndFeedback();
   }
 }
-
+/*FEEDBACK FOR SCORES*/
 function quizEndFeedback(){
     if(score > 8){
         $("#feedback").html(`<div class="text-center">
@@ -196,7 +196,7 @@ function quizEndFeedback(){
     }
 
 }
-
+/*ADDING CLASS TO BUTTON CLICKED*/
 function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
@@ -205,7 +205,7 @@ function setStatusClass(element, correct) {
     element.classList.add("red");
   }
 }
-
+/*CLEARING CLASSES OF BUTTONS CLICKED*/
 function clearStatusClass(element) {
   element.classList.remove("green");
   element.classList.remove("red");
@@ -216,22 +216,18 @@ nextButton.addEventListener("click", () => {
   resetButtonState();
   nextQuestion();
 })
-
+/*RESETING BUTTONS STATE*/
 function resetButtonState(){
   answerButtonsArray.forEach( element => {
     clearStatusClass(element);
   });
 }
-
+/*SHOWING NEXT QUESTION AND ENABLING ANSWER BUTTONS*/
 function nextQuestion() {
   nextButton.classList.add("d-none");
   showQuestion(shuffledQuestions[currentQuestion]);
    $(".answer-btn").prop("disabled", false);
 };
-
-function quitGame(){
-    
-}
 
 tryAgain.addEventListener('click', () => {
     scoreContainer.classList.add("d-none");
