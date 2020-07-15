@@ -173,7 +173,28 @@ function selectAnswer(e) {
     questionContainer.classList.add("d-none");
     $("h3").hide();
     scoreElement.innerText = "Your score is: " + score + "/" + questions.length;
+    quizEndFeedback();
   }
+}
+
+function quizEndFeedback(){
+    if(score > 8){
+        $("#feedback").html(`<div class="text-center">
+      <p><img src="assets/images/well_done.gif" alt="Well Done" class="img-fluid mx-auto"></p>
+      <p><strong>If you want to learn more, visit <a href="https://www.ourplanet.com/en/" target="_blank">Our Planet</a></strong></p>
+      </div>`);
+    }else if(score > 5){
+        $("#feedback").html(`<div class="text-center">
+      <p><img src="assets/images/not_bad.gif" alt="Not Bad" class="img-fluid mx-auto"></p>
+      <p><strong>If you want to learn more, visit <a href="https://www.ourplanet.com/en/" target="_blank">Our Planet</a></strong></p>
+      </div>`);
+    }else {
+        $("#feedback").html(`<div class="text-center">
+      <p><img src="assets/images/not_good.gif" alt="Not Good" class="img-fluid mx-auto"></p>
+      <p><strong>If you want to learn more, visit <a href="https://www.ourplanet.com/en/" target="_blank">Our Planet</a></strong></p>
+      </div>`);
+    }
+
 }
 
 function setStatusClass(element, correct) {
