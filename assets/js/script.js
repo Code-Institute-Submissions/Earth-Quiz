@@ -77,13 +77,13 @@ let questions = [
     ],
   },
   {
-    question: "What is the name of the deepest location in the world’s oceans?",
-    img: "assets/images/Mariana_Trench.jpg",
+    question: "What do you call molten rock before it has erupted?",
+    img: "assets/images/stone.jpg",
     answers: [
-      { text: "Tonga Trench", correct: false },
-      { text: "Philippine Trench", correct: false },
-      { text: "Mariana Trench", correct: true },
-      { text: "Japan Trench", correct: false },
+      { text: "Lava", correct: false },
+      { text: "Adakite", correct: false },
+      { text: "Magma", correct: true },
+      { text: "Blairmorite", correct: false },
     ],
   },
   {
