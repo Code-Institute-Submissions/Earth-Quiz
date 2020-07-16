@@ -61,4 +61,12 @@
      height: 100%;
      width: 100%;
 }
- 
+/***MEDIA QUERIES***/
+@media screen and (max-width: 600px) {
+  #landing-page ul:hover{
+     transform: none;
+}
+   h1 {
+       font-size: 4em;
+   }
+}
