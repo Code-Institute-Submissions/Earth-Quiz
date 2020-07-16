@@ -179,7 +179,8 @@ function selectAnswer(e) {
     score = 0;
     startGame();
     resetButtonState();
-    questionContainer.classList.remove("d-none");   
+    questionContainer.classList.remove("d-none");
+    $("h3").show()   
 })
   }
 }
