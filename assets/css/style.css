@@ -44,7 +44,6 @@
      display: inline-block;
 }
  .answer-btn:hover {
-     background-color: orange;
      cursor: pointer;
 }
  .answer-btn:focus {
