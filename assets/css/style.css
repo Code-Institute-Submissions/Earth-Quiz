@@ -23,6 +23,7 @@
 
  #landing-page ul:hover{
      transform: scale(1.2);
+     transition: transform .2s;
  }
 /***USED OFTEN***/
  h1, h2, h3 {
