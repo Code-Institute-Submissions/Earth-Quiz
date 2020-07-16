@@ -174,6 +174,13 @@ function selectAnswer(e) {
     $("h3").hide();
     scoreElement.innerText = "Your score is: " + score + "/" + questions.length;
     quizEndFeedback();
+    tryAgain.addEventListener('click', () => {
+    scoreContainer.classList.add("d-none");
+    score = 0;
+    startGame();
+    resetButtonState();
+    questionContainer.classList.remove("d-none");   
+})
   }
 }
 /*FEEDBACK FOR SCORES*/
@@ -229,10 +236,4 @@ function nextQuestion() {
    $(".answer-btn").prop("disabled", false);
 };
 
-tryAgain.addEventListener('click', () => {
-    scoreContainer.classList.add("d-none");
-    questionContainer.classList.remove("d-none");
-    score = 0;
-    nextQuestion();
-    resetButtonState();
-})
+
