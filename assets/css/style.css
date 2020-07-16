@@ -21,6 +21,12 @@
      font-size: 7em;
 }
 
+header a {
+    color: #fffde7;
+}
+header a:hover {
+    color: #fffde7; 
+}
  #landing-page ul:hover{
      transform: scale(1.2);
      transition: transform .2s;
