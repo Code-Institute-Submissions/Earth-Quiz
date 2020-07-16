@@ -150,8 +150,7 @@ function showQuestion(question) {
     }
     button.addEventListener("click", selectAnswer);
   });
-};
-
+}
 function selectAnswer(e) {
   /***CREATING AN EMPTY ARRAY FOR RESETING STATE OF THE BUTTONS***/  
   answerButtonsArray = [];  
@@ -165,7 +164,7 @@ function selectAnswer(e) {
   Array.from(answersButtonsClass).forEach(button => {
     setStatusClass(button, button.dataset.correct);
     answerButtonsArray.push(button);
-  })
+  });
   if (shuffledQuestions.length > currentQuestion + 1) {
      nextButton.classList.remove("d-none");
   } else {
@@ -180,8 +179,8 @@ function selectAnswer(e) {
     startGame();
     resetButtonState();
     questionContainer.classList.remove("d-none");
-    $("h3").show()   
-})
+    $("h3").show();   
+});
   }
 }
 /***FEEDBACK FOR SCORES***/
@@ -206,7 +205,7 @@ function quizEndFeedback(){
 }
 /***ADDING CLASS TO BUTTON CLICKED***/
 function setStatusClass(element, correct) {
-  clearStatusClass(element)
+  clearStatusClass(element);
   if (correct) {
     element.classList.add("green");
   } else {
@@ -223,7 +222,7 @@ nextButton.addEventListener("click", () => {
   currentQuestion++;
   resetButtonState();
   nextQuestion();
-})
+});
 /***RESETING BUTTONS STATE***/
 function resetButtonState(){
   answerButtonsArray.forEach( element => {
@@ -235,6 +234,6 @@ function nextQuestion() {
   nextButton.classList.add("d-none");
   showQuestion(shuffledQuestions[currentQuestion]);
    $(".answer-btn").prop("disabled", false);
-};
+}
 
 
