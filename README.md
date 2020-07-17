@@ -42,7 +42,7 @@
 ### Existing Features
 #### 
 ### Features Left to Implement
-1. Timer - each question could have 30 seconds to answer it before it is treated as incorrect answer 
+1. Timer - each question could have 30 seconds for answer to be clicked before it is treated as incorrect answer 
 2. Ability to quit the game - implementing quit button which would offer an options Yes or No and wait for user click
 3. Leaderboard - to make it more competitive
 ## Technologies Applied:
