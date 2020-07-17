@@ -12,6 +12,23 @@
 + [Bootstrap](https://getbootstrap.com/) - to easily adapt the website to be responsive for all users
 + [Jquery](https://jquery.com/) -
 
+## Deployment
+#### This website was deployed using GitHub Pages following steps below:
+1. From the menu items near the top of the page, select Settings.
+2. Scroll down to the GitHub Pages section.
+3. Under Source click the drop-down menu labelled None and select Master Branch
+4. On selecting Master Branch the page is automatically refreshed, the website is now deployed.
+5. Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
+### Run this project locally
+#### Clone this project from GitHub:
+1. Under the repository name, click "Clone or download".
+2. In the Clone with HTTPs section, copy the clone URL for the repository.
+3. In your local IDE open Git Bash.
+4. Change the current working directory to the location where you want the cloned directory to be made.
+5. Type git clone, and then paste the URL you copied in Step 3.
+6. Press Enter. Your local clone will be created.
+Click [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) for further reading and troubleshooting on cloning a repository from GitHub.
+
 ## Credits
 
 ### Content
