@@ -9,8 +9,8 @@
 #### The website contains an landing page and the actual quiz game. The result of this project is an interactive frontend website.
 ## Table of Contents
 ### 1. UX
-### 2. Technologies Applied
-### 3. Features
+### 2. Features
+### 3. Technologies Applied
 ### 4. Tests 
 ### 5. Deployment
 ### 6. Credits
@@ -39,6 +39,12 @@
 ![alt text](wireframes/Question_Page_Mobile.png "Question Page Mobile")
 ![alt text](wireframes/Score_Page.png "Score Page")
 ## Features
+### Existing Features
+#### 
+### Features Left to Implement
+1. Timer - each question could have 30 seconds to answer it before it is treated as incorrect answer 
+2. Ability to quit the game - implementing quit button which would offer an options Yes or No and wait for user click
+3. Leaderboard - to make it more competitive
 ## Technologies Applied:
 + HTML, CSS and JavaScript programming languages
 + [Google Fonts](https://fonts.google.com/) - Balsamiq Sans
