@@ -4,6 +4,16 @@
 ### [GitHub repository Link](https://github.com/todorr92/Earth-Quiz)
 
 ![alt text](wireframes/Mockup_Generator.png "Mockup Generator")
+## Summary
+#### This is a quiz game build to entertain the user, teach something and test the developer's knowledge of JavaScript. The theme of the website is 'Earth', which will be visible in various aspect of the game.
+#### The website contains an landing page and the actual quiz game. The result of this project is an interactive frontend website.
+## Table of Contents
+### 1. UX
+### 2. Technologies Applied
+### 3. Features
+### 4. Tests 
+### 5. Deployment
+### 6. Credits
 ## Wireframe Mockups:
 #### During the design process I drew up wireframes using [Balsamiq](https://balsamiq.com/)
 ![alt text](wireframes/Landing_Page.png "Landing Page")
@@ -15,6 +25,8 @@
 + [Google Fonts](https://fonts.google.com/) - Balsamiq Sans
 + [Bootstrap](https://getbootstrap.com/) - to easily adapt the website to be responsive for all users
 + [Jquery](https://jquery.com/) - to simplify certin aspects of JavaScript 
++ [Github](https://github.com/) - used to store my repository and record my commits
++ [Gitpod](https://gitpod.io/workspaces/) - used as online IDE
 + [EZGIF.COM](https://ezgif.com/optimize) - used to compress gifs for feedback section
 + [tinyjpg](https://tinyjpg.com/) - used to compress images for better loading time
 
@@ -52,9 +64,7 @@ Click [here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 + Other helpful resources were [w3schools.com](), [CSS Gradient](), [Stack Overflow](), [Color Tools](), [MDN web docs](developer.mozilla.org) and [Stack Abuse](stackabuse.com)
 
 ### Acknowledgements
- 
 #### I would like to thank my mentor, Akshat Garg for his support, insights and advices. 
 #### I would also like to thank Slack community for help provided when needed.
-
 ## Disclaimer
 #### Please note that content on this website is educational purpose only
