@@ -66,9 +66,11 @@ header a:hover {
 }
  .green {
      background-color: green;
+     color: black;
 }
  .red {
      background-color: red;
+     color: black;
 }
 /***QUIZ IMAGES***/
  .question .card img {
