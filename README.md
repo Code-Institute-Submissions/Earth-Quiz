@@ -5,15 +5,21 @@
 
 ![alt text](wireframes/Mockup_Generator.png "Mockup Generator")
 ## Wireframe Mockups:
-#### During the design process I drew up wireframes using Balsamiq
+#### During the design process I drew up wireframes using [Balsamiq](https://balsamiq.com/)
+![alt text](wireframes/Landing_Page.png "Landing Page")
+![alt text](wireframes/Question_Page_Desktop.png "Question Page Desktop")
+![alt text](wireframes/Question_Page_Mobile.png "Question Page Mobile")
+![alt text](wireframes/Score_Page.png "Score Page")
 ## Technologies Used:
 + HTML, CSS and JavaScript programming languages
 + [Google Fonts](https://fonts.google.com/) - Balsamiq Sans
 + [Bootstrap](https://getbootstrap.com/) - to easily adapt the website to be responsive for all users
-+ [Jquery](https://jquery.com/) -
++ [Jquery](https://jquery.com/) - to simplify certin aspects of JavaScript 
++ [EZGIF.COM](https://ezgif.com/optimize) - used to compress gifs for feedback section
++ [tinyjpg](https://tinyjpg.com/) - used to compress images for better loading time
 
 ## Deployment
-#### This website was deployed using GitHub Pages following steps below:
+### This website was deployed using GitHub Pages following steps below:
 1. From the menu items near the top of the page, select Settings.
 2. Scroll down to the GitHub Pages section.
 3. Under Source click the drop-down menu labelled None and select Master Branch
@@ -40,10 +46,9 @@ Click [here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 + Feedback Gifs were obtained from [GIFER](https://gifer.com/en)
 
 ### Code Credits
-+ [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw)
-+ [Mike Dane](https://www.youtube.com/channel/UCvmINlrza7JHB1zkIOuXEbw)
-+ [VerkkoNet](https://www.youtube.com/channel/UCErON4Z0YyiVHKNtx4BvLfg)
-+ [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw)
++ [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw) - Build A Quiz App With JavaScript
++ [VerkkoNet](https://www.youtube.com/channel/UCErON4Z0YyiVHKNtx4BvLfg) - Quiz Application in JS 
++ [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) - Build a Quiz App
 + Other helpful resources were [w3schools.com](), [CSS Gradient](), [Stack Overflow](), [Color Tools](), [MDN web docs](developer.mozilla.org) and [Stack Abuse](stackabuse.com)
 
 ### Acknowledgements
