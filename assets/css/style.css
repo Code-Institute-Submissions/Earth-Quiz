@@ -68,7 +68,7 @@ header a:hover {
      width: 100%;
 }
 /***MEDIA QUERIES***/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
   #landing-page ul:hover{
      transform: none;
 }
