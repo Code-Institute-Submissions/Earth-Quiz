@@ -14,13 +14,32 @@
 ### 4. Tests 
 ### 5. Deployment
 ### 6. Credits
+## UX
+### User stories
+#### As a **game player** I want to:
+1. Enjoy the game
+2. Learn something new
+3. See my score
+#### As a **developer** I want to:
+1. Gain more knowledge on JavaScript
+2. Learn something on given theme for a game
+3. Entertain myself and the end-user by playing the game
+### Design Choices
+#### Colours
++ **Text** - used #fffde7 (very light yellow) for text on landing page and score section so it can fit well on whole Earth background.
++ **Buttons** - used yellow color for Start Game button on landing page, for the answers buttons #90caf9 (light blue) was used, then the colour was changing on click event in red or green depending if the answer was correct or wrong.
+#### Fonts
++ [Balsamiq Sans](https://fonts.google.com/specimen/Balsamiq+Sans?query=bal) - used this font for whole website to fit nice through whole experience playing game 
+#### Background
++ Earth from Space - to show whole Earth as a place
 ## Wireframe Mockups:
 #### During the design process I drew up wireframes using [Balsamiq](https://balsamiq.com/)
 ![alt text](wireframes/Landing_Page.png "Landing Page")
 ![alt text](wireframes/Question_Page_Desktop.png "Question Page Desktop")
 ![alt text](wireframes/Question_Page_Mobile.png "Question Page Mobile")
 ![alt text](wireframes/Score_Page.png "Score Page")
-## Technologies Used:
+## Features
+## Technologies Applied:
 + HTML, CSS and JavaScript programming languages
 + [Google Fonts](https://fonts.google.com/) - Balsamiq Sans
 + [Bootstrap](https://getbootstrap.com/) - to easily adapt the website to be responsive for all users
@@ -29,7 +48,7 @@
 + [Gitpod](https://gitpod.io/workspaces/) - used as online IDE
 + [EZGIF.COM](https://ezgif.com/optimize) - used to compress gifs for feedback section
 + [tinyjpg](https://tinyjpg.com/) - used to compress images for better loading time
-
+## Testing
 ## Deployment
 ### This website was deployed using GitHub Pages following steps below:
 1. From the menu items near the top of the page, select Settings.
