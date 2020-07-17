@@ -8,6 +8,8 @@
      font-family: 'Balsamiq Sans', sans-serif;
 }
  body {
+     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(102, 101, 101, 0.7)), to(rgba(102, 101, 101, 0.7))),url(../images/planet-earth.jpg);
+     background-image: -o-linear-gradient(rgba(102, 101, 101, 0.7), rgba(102, 101, 101, 0.7)),url(../images/planet-earth.jpg);
      background-image: linear-gradient(rgba(102, 101, 101, 0.7), rgba(102, 101, 101, 0.7)),url(../images/planet-earth.jpg);
      background-size: cover;
      background-position: center;
@@ -28,8 +30,14 @@ header a:hover {
     color: #fffde7; 
 }
  #landing-page ul:hover{
-     transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+         -ms-transform: scale(1.2);
+             transform: scale(1.2);
+     -webkit-transition: -webkit-transform .2s;
+     transition: -webkit-transform .2s;
+     -o-transition: transform .2s;
      transition: transform .2s;
+     transition: transform .2s, -webkit-transform .2s;
  }
 /***USED OFTEN***/
  h1, h2, h3 {
@@ -70,7 +78,9 @@ header a:hover {
 /***MEDIA QUERIES***/
 @media screen and (max-width: 992px) {
   #landing-page ul:hover{
-     transform: none;
+     -webkit-transform: none;
+         -ms-transform: none;
+             transform: none;
 }
    h1 {
        font-size: 4em;
