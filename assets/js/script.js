@@ -187,19 +187,28 @@ function selectAnswer(e) {
 function quizEndFeedback(){
     if(score > 8){
         $("#feedback").html(`<div class="text-center">
-      <img src="assets/images/well_done.gif" alt="Well Done" class="img-fluid mx-auto">
-      <h3><strong>If you want to learn more, visit <a href="https://www.ourplanet.com/en/" target="_blank" class="text-decoration-none">Our Planet</a></strong></h3>
-      </div>`);
+        <video autoplay="autoplay" loop="loop" width="500" height="500">
+        <source src="assets/images/well_done.mp4" type="video/mp4" />
+        <img src="assets/images/well_done.gif" alt="Well Done" class="img-fluid mx-auto">
+        </video>
+        <h3><strong>If you want to learn more, visit <a href="https://www.ourplanet.com/en/" target="_blank" class="text-decoration-none">Our Planet</a></strong></h3>
+        </div>`);
     }else if(score > 5){
         $("#feedback").html(`<div class="text-center">
-      <img src="assets/images/not_bad.gif" alt="Not Bad" class="img-fluid mx-auto">
-      <h3><strong>If you want to learn more, visit <a href="https://www.ourplanet.com/en/" target="_blank" class="text-decoration-none">Our Planet</a></strong></h3>
-      </div>`);
+        <video autoplay="autoplay" loop="loop" width="500" height="500">
+        <source src="assets/images/not_bad.mp4" type="video/mp4" />
+        <img src="assets/images/not_bad.gif" alt="Not Bad" class="img-fluid mx-auto">
+        </video>
+        <h3><strong>If you want to learn more, visit <a href="https://www.ourplanet.com/en/" target="_blank" class="text-decoration-none">Our Planet</a></strong></h3>
+        </div>`);
     }else {
         $("#feedback").html(`<div class="text-center">
-      <img src="assets/images/not_good.gif" alt="Not Good" class="img-fluid mx-auto">
-      <h3><strong>If you want to learn more, visit <a href="https://www.ourplanet.com/en/" target="_blank" class="text-decoration-none">Our Planet</a></strong></h3>
-      </div>`);
+        <video autoplay="autoplay" loop="loop" width="500" height="500">
+        <source src="assets/images/not_good.mp4" type="video/mp4" />
+        <img src="assets/images/not_good.gif" alt="Not Good" class="img-fluid mx-auto">
+        </video>
+        <h3><strong>If you want to learn more, visit <a href="https://www.ourplanet.com/en/" target="_blank" class="text-decoration-none">Our Planet</a></strong></h3>
+        </div>`);
     }
 
 }
