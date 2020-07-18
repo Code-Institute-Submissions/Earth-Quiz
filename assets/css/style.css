@@ -89,7 +89,7 @@ header a:hover {
    }
 }
 
-@media only screen and (max-width: 1620px) {
+@media screen and (max-width: 1620px) {
     #start-button{
         margin-bottom: 2rem;
     }
