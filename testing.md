@@ -3,9 +3,9 @@
 ## Table of Contents
 1. [Manual Testing](manual-testing)
 2. [Code Validation](code-validation)
-..* Responsiveness & Rendering
-..* Browser Compatibility
-..* Known Bugs
+  * Responsiveness & Rendering
+  * Browser Compatibility
+  * Known Bugs
 
 ## Manual Testing
 #### Manual tests have been done throughout the development of the project.
@@ -20,8 +20,12 @@
 ### JSHint 
 + Couple of unused variables which are deleted from script.js file
 + 23 warnings throught my whole code, all of them were fixed by adding "// jshint esversion: 6" on top of my script file 
-..* 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)
-..* arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6')
-..* 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)
-..* 'template literal syntax' is only available in ES6 (use 'esversion: 6')
-+ 14 warnings for undefined variable ("$"), it was reffering to JQuery selector
+  * 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)
+  * arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6')
+  * 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)
+  * 'template literal syntax' is only available in ES6 (use 'esversion: 6')
++ 14 warnings for undefined variable ("$"), it was reffering to JQuery selector and it can be ignored
+### Browser and mobile testing
++ Chosen font Balsamiq Sans not displaying on Safari 
++ No issues were found on Google Chrome, Mozilla Firefox, Microsoft Edge and Internet Explorer
++ No issues were found on any mobile devices
