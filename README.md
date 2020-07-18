@@ -6,14 +6,14 @@
 ![alt text](wireframes/Mockup_Generator.png "Mockup Generator")
 ## Summary
 #### This is a quiz game build to entertain the user, teach something and test the developer's knowledge of JavaScript. The theme of the website is 'Earth', which will be visible in various aspect of the game.
-#### The website contains an landing page and the actual quiz game. The result of this project is an interactive frontend website.
+#### The website contains an landing page, score section and the actual quiz game. The result of this project is an interactive frontend website.
 ## Table of Contents
-### 1. UX
-### 2. Features
-### 3. Technologies Applied
-### 4. Tests 
-### 5. Deployment
-### 6. Credits
+### 1. [UX](#ux)
+### 2. [Features](#features)
+### 3. [Technologies Applied](#technologies-applied)
+### 4. [Tests](#tests) 
+### 5. [Deployment](#deployment)
+### 6. [Credits](#credits)
 ## UX
 ### User stories
 #### As a **game player** I want to:
