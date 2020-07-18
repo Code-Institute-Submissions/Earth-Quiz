@@ -40,7 +40,11 @@
 ![alt text](wireframes/Score_Page.png "Score Page")
 ## Features
 ### Existing Features
-#### 
+1. Landing page - couple of facts about Earth
+2. Start Quiz Button - allows user to start the game
+3. Quiz container - holds all questions, images and answers
+4. Score section - shows users score, feedback based on that score and Try Again button
+5. Try Again button - restarts the game and heads straight to first random question
 ### Features Left to Implement
 1. Timer - each question could have 30 seconds for answer to be clicked before it is treated as incorrect answer 
 2. Ability to quit the game - implementing quit button which would offer an options Yes or No and wait for user click
@@ -55,6 +59,7 @@
 + [EZGIF.COM](https://ezgif.com/optimize) - used to compress gifs for feedback section
 + [tinyjpg](https://tinyjpg.com/) - used to compress images for better loading time
 ## Testing
+### The test procedures and the key issues of the tests are written in the file [testing.md](testing.md)
 ## Deployment
 ### This website was deployed using GitHub Pages following steps below:
 1. From the menu items near the top of the page, select Settings.
