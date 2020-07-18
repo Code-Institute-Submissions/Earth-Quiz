@@ -152,7 +152,6 @@ function selectAnswer(e) {
   /***CREATING AN EMPTY ARRAY FOR RESETING STATE OF THE BUTTONS***/  
   answerButtonsArray = [];  
   const selectedButton = e.target;
-  const correct = selectedButton.dataset.correct;
   if (selectedButton.dataset.correct === "true"){
       score++;
   }
