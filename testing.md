@@ -18,3 +18,10 @@
 ### W3C CSS Validator
 + No errors or warnings were found on style.css
 ### JSHint 
++ Couple of unused variables which are deleted from script.js file
++ 23 warnings throught my whole code, all of them were fixed by adding "// jshint esversion: 6" on top of my script file 
+..* 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)
+..* arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6')
+..* 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)
+..* 'template literal syntax' is only available in ES6 (use 'esversion: 6')
++ 14 warnings for undefined variable ("$"), it was reffering to JQuery selector
