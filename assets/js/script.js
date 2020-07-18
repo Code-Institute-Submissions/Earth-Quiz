@@ -107,11 +107,8 @@ let questions = [
     ],
   },
 ];
-let landingPage = document.getElementById("landing-page");
-let startButton = document.getElementById("start-button");
 let questionContainer = document.getElementById("quiz-questions");
 let questionElement = document.getElementById("question-info");
-let answersButtons = document.getElementById("answer-btns");
 let answersButtonsClass = document.getElementsByClassName("answer-btn");
 let nextButton = document.getElementById("next-button");
 let shuffledQuestions, currentQuestion;
