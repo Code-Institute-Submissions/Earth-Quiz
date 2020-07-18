@@ -59,7 +59,7 @@
 + [EZGIF.COM](https://ezgif.com/optimize) - used to compress gifs for feedback section
 + [tinyjpg](https://tinyjpg.com/) - used to compress images for better loading time
 ## Testing
-### The test procedures and the key issues of the tests are written in the file [testing.md](testing.md)
+#### The test procedures and the key issues of the tests are written in the file [testing.md](testing.md)
 ## Deployment
 ### This website was deployed using GitHub Pages following steps below:
 1. From the menu items near the top of the page, select Settings.
