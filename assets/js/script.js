@@ -139,7 +139,7 @@ function showQuestion(question) {
   /***POPULATING QUESTION CONTAINER WITH QUESTION, IMAGE AND ANSWERS***/  
   questionElement.innerText = question.question;
   imageElement.src = question.img;
-  question.answers.forEach(function(answer, index) {
+  question.answers.forEach((answer, index) => {
     const button = document.getElementById("answer-btn-" + (index + 1));
     button.innerText = answer.text;
     button.removeAttribute('data-correct');
@@ -170,7 +170,7 @@ function selectAnswer(e) {
     $("h3").hide();
     scoreElement.innerText = "Your score is: " + score + "/" + questions.length;
     quizEndFeedback();
-    tryAgain.addEventListener('click', function () {
+    tryAgain.addEventListener('click', () => {
     scoreContainer.classList.add("d-none");
     score = 0;
     startGame();
@@ -224,7 +224,7 @@ function clearStatusClass(element) {
   element.classList.remove("red");
 }
 
-nextButton.addEventListener("click", function () {
+nextButton.addEventListener("click", () => {
   currentQuestion++;
   resetButtonState();
   nextQuestion();
