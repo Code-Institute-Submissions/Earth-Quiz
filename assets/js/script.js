@@ -129,7 +129,7 @@ function startGame() {
     $(".question").show("slow");
   });
   /***SHUFFLING QUESTIONS SO THE ORDER IS NOT ALWAYS SAME***/
-  shuffledQuestions = questions.sort(function (){ Math.random() - 0.5});
+  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
   /*CURRENT QUESTION INDEX*/
   currentQuestion = 0;
   nextQuestion(); 
