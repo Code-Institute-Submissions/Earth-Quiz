@@ -7,6 +7,7 @@
  body {
      font-family: 'Balsamiq Sans', sans-serif;
      font-weight:400;
+     font-style: regular;
 }
  body {
      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(102, 101, 101, 0.7)), to(rgba(102, 101, 101, 0.7))),url(../images/planet-earth.jpg);
