@@ -1,8 +1,7 @@
 // jshint esversion: 6 /*Added to remove warnings (ES6) from JSHint  */
 /***HIDE QUESTION SECTION WHEN THE PAGE IS LOADED***/
 $(document).ready(function () {
-  //$(".question").hide();
-  document.getElementsByClassName("question").classList.add("d-none");
+  $(".question").hide();
 });
 /***QUIZ QUESTIONS***/
 let questions = [
