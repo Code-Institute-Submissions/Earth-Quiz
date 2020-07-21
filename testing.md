@@ -29,5 +29,5 @@
 + 14 warnings for undefined variable ("$"), it was reffering to JQuery selector and it can be ignored
 ### Browser and mobile testing
 + Chosen font Balsamiq Sans not displaying on Safari 
-+ No issues were found on Google Chrome, Mozilla Firefox, Microsoft Edge and Internet Explorer
++ No issues were found on Google Chrome, Mozilla Firefox, Microsoft Edge, Opera and Microsoft Edge
 + No issues were found on any mobile devices
