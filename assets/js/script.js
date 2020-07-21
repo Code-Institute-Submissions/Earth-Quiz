@@ -115,6 +115,8 @@ let imageElement = document.getElementById("image");
 let scoreElement = document.getElementById("score");
 let scoreContainer = document.getElementById("score-page");
 let tryAgain = document.getElementById("try-again-btn");
+let restartGame = document.getElementById("restart-button");
+let quitGame = document.getElementById("quit-button");
 let score = 0;
 let answerButtonsArray;
 startGame();
@@ -239,5 +241,11 @@ function nextQuestion() {
   showQuestion(shuffledQuestions[currentQuestion]);
    $(".answer-btn").prop("disabled", false);
 }
+restartGame.addEventListener("click", ()=>{
+    score = 0;
+    startGame();
+    resetButtonState();
+});
+quitGame.addEventListener("click",()=>{
 
-
+});
