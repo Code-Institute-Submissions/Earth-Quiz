@@ -64,6 +64,12 @@ header a:hover {
  .answer-btn:focus {
      outline: 0;
 }
+#quit-button {
+    float: left;
+}
+#restart-button {
+    float: right;
+}
  .green {
      background-color: green;
      color: black;
