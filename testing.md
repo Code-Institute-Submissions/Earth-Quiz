@@ -15,7 +15,7 @@
 ### Autoprefixer
 + Added prefixes to CSS for different browsers
 ### W3C Markup Validator
-+ One warning was found on index.html in score section as empty <h2></h2> element was created to hold an actual score after the game - added "Score" text to mentioned element and that fixed the issue
++ One warning was found on index.html in score section as empty "<h2></h2>" element was created to hold an actual score after the game - added "Score" text to mentioned element and that fixed the issue
 + Other than mentioned above, there were no errors or warnings in index.html
 ### W3C CSS Validator
 + No errors or warnings were found on style.css
