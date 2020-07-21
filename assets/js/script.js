@@ -2,8 +2,6 @@
 /***HIDE QUESTION SECTION WHEN THE PAGE IS LOADED***/
 $(document).ready(function () {
   $(".question").hide();
-  $("#correct-feedback").hide();
-  $("#incorrect-feedback").hide();
 });
 /***QUIZ QUESTIONS***/
 let questions = [
@@ -127,6 +125,7 @@ function startGame() {
   $("#start-button").click(function () {
     $("#landing-page").hide("slow");
     $(".question").show("slow");
+    console.log("Started");
   });
   /***SHUFFLING QUESTIONS SO THE ORDER IS NOT ALWAYS SAME***/
   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
