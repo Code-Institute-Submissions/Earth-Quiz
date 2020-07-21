@@ -116,7 +116,6 @@ let scoreElement = document.getElementById("score");
 let scoreContainer = document.getElementById("score-page");
 let tryAgain = document.getElementById("try-again-btn");
 let restartGame = document.getElementById("restart-button");
-let quitGame = document.getElementById("quit-button");
 let score = 0;
 let answerButtonsArray;
 startGame();
@@ -245,7 +244,4 @@ restartGame.addEventListener("click", ()=>{
     score = 0;
     startGame();
     resetButtonState();
-});
-quitGame.addEventListener("click",()=>{
-
 });
