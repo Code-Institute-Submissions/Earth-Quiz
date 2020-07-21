@@ -125,10 +125,9 @@ function startGame() {
   $("#start-button").click(function () {
     $("#landing-page").hide("slow");
     $(".question").show("slow");
-    console.log("Started");
   });
   /***SHUFFLING QUESTIONS SO THE ORDER IS NOT ALWAYS SAME***/
-  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+  shuffledQuestions = questions.sort(function(){ Math.random() - 0.5});
   /*CURRENT QUESTION INDEX*/
   currentQuestion = 0;
   nextQuestion(); 
@@ -138,7 +137,7 @@ function showQuestion(question) {
   /***POPULATING QUESTION CONTAINER WITH QUESTION, IMAGE AND ANSWERS***/  
   questionElement.innerText = question.question;
   imageElement.src = question.img;
-  question.answers.forEach((answer, index) => {
+  question.answers.forEach(function (answer, index) {
     const button = document.getElementById("answer-btn-" + (index + 1));
     button.innerText = answer.text;
     button.removeAttribute('data-correct');
@@ -169,7 +168,7 @@ function selectAnswer(e) {
     $("h3").hide();
     scoreElement.innerText = "Your score is: " + score + "/" + questions.length;
     quizEndFeedback();
-    tryAgain.addEventListener('click', () => {
+    tryAgain.addEventListener('click', function () {
     scoreContainer.classList.add("d-none");
     score = 0;
     startGame();
@@ -223,7 +222,7 @@ function clearStatusClass(element) {
   element.classList.remove("red");
 }
 
-nextButton.addEventListener("click", () => {
+nextButton.addEventListener("click", function () {
   currentQuestion++;
   resetButtonState();
   nextQuestion();
