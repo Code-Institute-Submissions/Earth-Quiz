@@ -45,10 +45,10 @@
 3. Quiz container - holds all questions, images and answers
 4. Score section - shows users score, feedback based on that score and Try Again button
 5. Try Again button - restarts the game and heads straight to first random question
+6. Quit button - reloads the quiz and goes back to landing page
 ### Features Left to Implement
 1. Timer - each question could have 30 seconds for answer to be clicked before it is treated as incorrect answer 
-2. Ability to quit the game - implementing quit button which would offer an options Yes or No and wait for user click
-3. Leaderboard - to make it more competitive
+2. Leaderboard - to make it more competitive
 ## Technologies Applied:
 + HTML, CSS and JavaScript programming languages
 + [Google Fonts](https://fonts.google.com/) - Balsamiq Sans
