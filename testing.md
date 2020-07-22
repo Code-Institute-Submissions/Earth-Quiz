@@ -1,10 +1,10 @@
 # Earth Quiz/Testing
 
 ## Table of Contents
-1. [Manual Testing](manual-testing)
-2. [Code Validation](code-validation)
-3. [Browser and mobile testing](browser-and-mobile-testing)
-4. [Additional Testing](additional-testing)
+1. [Manual Testing](#manual-testing)
+2. [Code Validation](#code-validation)
+3. [Browser and mobile testing](#browser-and-mobile-testing)
+4. [Additional Testing](#additional-testing)
 ## Manual Testing
 #### Manual tests have been done throughout the development of the project.
 #### The following test scenarios confirms that the website is behaving accordingly, and that bugs have been taken care of:
