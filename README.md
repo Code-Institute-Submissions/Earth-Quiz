@@ -57,6 +57,7 @@
 + [Github](https://github.com/) - used to store my repository and record my commits
 + [Gitpod](https://gitpod.io/workspaces/) - used as online IDE
 + [EZGIF.COM](https://ezgif.com/optimize) - used to compress gifs for feedback section
++ [gif-2-mp4](http://gif-2-mp4.com/) - converted gifs to mp4
 + [tinyjpg](https://tinyjpg.com/) - used to compress images for better loading time
 ## Testing
 #### The test procedures and the key issues of the tests are written in the file [testing.md](testing.md)
