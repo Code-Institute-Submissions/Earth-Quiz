@@ -8,7 +8,20 @@
 ## Manual Testing
 #### Manual tests have been done throughout the development of the project.
 #### The following test scenarios confirms that the website is behaving accordingly, and that bugs have been taken care of:
-
+### Landing Page
+1. Question container is hidden when page is reloading, and only landing page is shown
+2. Clicking on "Planet Earth" text is refreshing whole page, and brings user back to landing page even when quiz is being played. Can be referred as a home link.
+3. Hovering over Earth facts zooms in text for better readability.
+4. Clicking on "Start Quiz" button quiz container containing random questions, answers and images is shown and landing page is hidden.
+### Quiz Questions
+1. Random question and image and answers for that specific questions are shown.
+2. Clicking on any question checks if that answer is correct and in case it is, change background of that button to green and all others to red, same applies if it's incorrect, only colour is changing depending if the clicked answer is correct. Also once any answer was clicked Next button appeared on the bottom.
+  + Bug was discovered here, after any answer being clicked on, that did not disable buttons, so multiple clicks were available and dataset for correct answer was being counted for each correct answer clicked.
+    + Fixed this bug by disabling answer buttons after first click and enabling it back after Next button was clicked.
+3. Clicking on Next button state of the buttons were supposed to clear(all colour classes applied to each button).
+  + Initial function created for clearing this state (clearStatusClass()) was not enough to clear states, so new function was created (resetButtonState()) and by using foreach in this function went into each button, and clear colour status it had.
+  + Dataset could not be reseted by above function and by playing game further more, bug was discovered where considering that dataset could not be cleared by resetButtonState() score was not correct.
+    + Fixed this bug by removing data-correct attribute from all buttons once new question is loaded.    
 ## Code Validation
 ### Autoprefixer
 + Added prefixes to CSS for different browsers.
