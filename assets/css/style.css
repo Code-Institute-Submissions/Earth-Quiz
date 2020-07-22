@@ -64,6 +64,26 @@ header a:hover {
  .answer-btn:focus {
      outline: 0;
 }
+#quit-button {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    overflow: visible;
+    text-transform: none;
+ }
+ #quit-button:hover {
+    background-color: #ca0518;
+    border-color: #ca0518;
+ }
  .green {
      background-color: green;
      color: black;
