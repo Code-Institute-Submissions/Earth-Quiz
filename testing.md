@@ -29,15 +29,19 @@
   + Considering all functions were ready and running there was no issues with this.
 + Clicking on Quit button works as well without any issues, once clicked whole page is refreshed back to landing page, same as clicking on "Planet Earth".
 ## Code Validation
-### Autoprefixer
+### [Autoprefixer](https://autoprefixer.github.io/)
 + Added prefixes to CSS for different browsers.
-### W3C Markup Validator
+### [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
 + One warning was found on index.html in score section as empty h2 element was created to hold an actual score after the game.
   + Added "Score" text to mentioned element and that fixed the issue.
 + Other than mentioned above, there were no errors or warnings in index.html.
-### W3C CSS Validator
+### [HTML Formatter](https://webformatter.com/html)
++ Formatted index.html for better indentation.
+### [W3C CSS Validator](https://validator.w3.org/)
 + No errors or warnings were found on style.css.
-### JSHint 
+### [CSS Formatter](https://www.cleancss.com/css-beautify/)
++ Formatted style.css.
+### [JSHint](https://jshint.com/) 
 + Couple of unused variables which were deleted from script.js file.
 + 23 warnings throught my whole code, all of them were fixed by adding "// jshint esversion: 6" on top of my script file.
   * 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
