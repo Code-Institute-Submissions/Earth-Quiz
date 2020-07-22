@@ -49,6 +49,7 @@
 ### Features Left to Implement
 1. Timer - each question could have 30 seconds for answer to be clicked before it is treated as incorrect answer 
 2. Leaderboard - to make it more competitive
+3. Add more questions or use API
 ## Technologies Applied:
 + HTML, CSS and JavaScript programming languages
 + [Google Fonts](https://fonts.google.com/) - Balsamiq Sans

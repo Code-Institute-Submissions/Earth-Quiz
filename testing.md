@@ -9,13 +9,13 @@
 #### Manual tests have been done throughout the development of the project.
 #### The following test scenarios confirms that the website is behaving accordingly, and that bugs have been taken care of:
 ### Landing Page
-1. Question container is hidden when page is reloading, and only landing page is shown
-2. Clicking on "Planet Earth" text is refreshing whole page, and brings user back to landing page even when quiz is being played. Can be referred as a home link.
-3. Hovering over Earth facts zooms in text for better readability.
-4. Clicking on "Start Quiz" button quiz container containing random questions, answers and images is shown and landing page is hidden.
++ Question container is hidden when page is reloading, and only landing page is shown.
++ Clicking on "Planet Earth" text is refreshing whole page, and brings user back to landing page even when quiz is being played. Can be referred as a home link.
++ Hovering over Earth facts zooms in text for better readability.
++ Clicking on "Start Quiz" button quiz container containing random questions, answers and images is shown and landing page is hidden.
 ### Quiz Questions
-+ Random question and image and answers for that specific questions are shown.
-+ Clicking on any question checks if that answer is correct and in case it is, change background of that button to green and all others to red, same applies if it's incorrect, only colour is changing depending if the clicked answer is correct. Also once any answer was clicked Next button appeared on the bottom.
++ Random question, image and answers for that specific questions are shown.
++ Clicking on any answer button checks if that answer is correct and in case it is, change background of that button to green and all others to red, same applies if it's incorrect, only colour is changing depending if the clicked answer is correct. Also once any answer was clicked Next button appeared on the bottom.
   + Bug was discovered here, after any answer being clicked on, that did not disable buttons, so multiple clicks were available and dataset for correct answer was being counted for each correct answer clicked.
     + Fixed this bug by disabling answer buttons after first click and enabling it back after Next button was clicked.
 + Clicking on Next button state of the buttons were supposed to clear(all colour classes applied to each button).
@@ -47,7 +47,7 @@
 + 14 warnings for undefined variable ("$"), it was reffering to JQuery selector and it can be ignored.
 ## Browser and mobile testing
 + Chosen font Balsamiq Sans not displaying on Safari, sans serif is loading instead.
-+ No issues were found on Google Chrome, Mozilla Firefox, Microsoft Edge, Opera and Microsoft Edge.
++ No issues were found on Google Chrome, Mozilla Firefox, Microsoft Edge and Opera.
 + No issues were found on any mobile devices.
 #### All testing was performed using:
 + Google Chrome Dev Tools.
