@@ -21,7 +21,13 @@
 + Clicking on Next button state of the buttons were supposed to clear(all colour classes applied to each button).
   + Initial function created for clearing this state (clearStatusClass()) was not enough to clear states, so new function was created (resetButtonState()) and by using foreach in this function went into each button, and clear colour status it had.
   + Dataset could not be reseted by above function and by playing game further more, bug was discovered where considering that dataset could not be cleared by resetButtonState() score was not correct.
-    + Fixed this bug by removing data-correct attribute from all buttons once new question is loaded.    
+    + Fixed this bug by removing data-correct attribute from all buttons once new question is loaded.
+### Score and Feedback container
++ Three different feedbacks (GIFS) were uploaded based on user's score and specific gif would appear at the end of the quiz showing users score as well.
+  + Optimization issue appeared here considering that even after compressing gifs, they took longer time to load at the end of the quiz. Fix for that was to convert them to mp4 video by using [gif-2-mp4](http://gif-2-mp4.com/). Converting them to mp4 reduced loading time significantly. GIF files were left as a backup just in case some websites cannot load mp4 videos.
++ Clicking on Try Again button hides score container, resets score to 0, resets each button state, shows question container again and random question is generated
+  + Considering all functions were ready and running there was no issues with this.
++ Clicking on Quit button works as well without any issues, once clicked whole page is refreshed back to landing page, same as clicking on "Planet Earth".
 ## Code Validation
 ### Autoprefixer
 + Added prefixes to CSS for different browsers.
